@@ -1,0 +1,174 @@
+:root {
+  --space-1: .5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+
+  --rem-bass: 1rem;
+  --rem-baritone: 1.125rem;
+  --rem-tenor: 1.375rem;
+  --rem-alto: 1.625rem;
+  --rem-mezzo: 2rem;
+  --rem-soprano: 3rem;
+
+  --rem-h4: var(--rem-baritone);
+  --rem-h3: var(--rem-tenor);
+  --rem-h2: var(--rem-alto);
+  --rem-h1: var(--rem-mezzo);
+}
+
+:focus {
+  outline-color: currentColor;
+}
+
+:link,
+:visited {
+  color: Crimson;
+}
+
+:link:not(:hover) {
+  text-decoration: none;
+}
+
+template {
+  display: none;
+}
+
+html {
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  line-height: normal;
+  color: Black;
+  background: WhiteSmoke;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 62em;
+  padding: 1em;
+}
+
+img {
+  box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  border-style: none;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+figure {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li {
+  margin-top: var(--space-1);
+  margin-bottom: var(--space-1);
+}
+
+blockquote, ol, ul, p {
+  margin-top: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font: inherit;
+  line-height: normal;
+  margin-top: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+h4 { font-size: var(--rem-h4); font-weight: 700 }
+h3 { font-size: var(--rem-h3); font-weight: 700 }
+h2 { font-size: var(--rem-h2); font-weight: 700 }
+h1 { font-size: var(--rem-h1); font-weight: 400 }
+
+.font-bass { font-size: var(--rem-bass); line-height: calc(5/3) }
+.font-baritone { font-size: var(--rem-baritone); line-height: calc(5/3) }
+.font-tenor { font-size: var(--rem-tenor); line-height: calc(4/3) }
+.font-alto { font-size: var(--rem-alto); line-height: calc(4/3) }
+.font-mezzo { font-size: var(--rem-mezzo); line-height: 1.125 }
+.font-soprano { font-size: var(--rem-soprano); line-height: 1.125 }
+
+.font-400 { font-weight: 400 }
+.font-500 { font-weight: 500 }
+.font-600 { font-weight: 600 }
+.font-700 { font-weight: 700 }
+
+.case-lower { text-transform: lowercase }
+.case-upper { text-transform: uppercase }
+
+.color-same { color: inherit }
+.decor-none { text-decoration: none }
+.line-single { line-height: 1 }
+
+.pad-0 { padding: 0 }
+.pad-1 { padding: var(--space-1) }
+.pad-2 { padding: var(--space-2) }
+.pad-3 { padding: var(--space-3) }
+.pad-4 { padding: var(--space-4) }
+
+.m0 { margin: 0 }
+.m1 { margin: var(--space-1) }
+.m2 { margin: var(--space-2) }
+.m3 { margin: var(--space-3) }
+.m4 { margin: var(--space-4) }
+.m-auto { margin: auto }
+
+.mt0 { margin-top: 0 }
+.mt1 { margin-top: var(--space-1) }
+.mt2 { margin-top: var(--space-2) }
+.mt3 { margin-top: var(--space-3) }
+.mt4 { margin-top: var(--space-4) }
+
+.ml0 { margin-left: 0 }
+.ml1 { margin-left: var(--space-1) }
+.ml2 { margin-left: var(--space-2) }
+.ml3 { margin-left: var(--space-3) }
+.ml4 { margin-left: var(--space-4) }
+
+.mr0 { margin-right: 0 }
+.mr1 { margin-right: var(--space-1) }
+.mr2 { margin-right: var(--space-2) }
+.mr3 { margin-right: var(--space-3) }
+.mr4 { margin-right: var(--space-4) }
+
+.mb0 { margin-bottom: 0 }
+.mb1 { margin-bottom: var(--space-1) }
+.mb2 { margin-bottom: var(--space-2) }
+.mb3 { margin-bottom: var(--space-3) }
+.mb4 { margin-bottom: var(--space-4) }
+
+.mt-auto { margin-top: auto }
+.ml-auto { margin-left: auto }
+.mr-auto { margin-right: auto }
+.mb-auto { margin-bottom: auto }
+
+.inline-flow { display: inline }
+.inline-root { display: inline-block }
+.inline-table { display: inline-table }
+
+.block-flow { display: block }
+.block-root { display: block; column-count: 1 }
+.block-table { display: table }
+.block-flex { display: flex }
+.flex-column { flex-direction: column }
+
+.float-none { float: none }
+.float-left { float: left; float: inline-start }
+.float-right { float: right; float: inline-end }
+
+@media (min-width: 20em) {
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: var(--space-3);
+    grid-row-gap: var(--space-3);
+  }
+}

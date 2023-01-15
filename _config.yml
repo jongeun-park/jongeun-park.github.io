@@ -1,0 +1,15 @@
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+defaults:
+  -
+    scope:
+      path: "" # anywhere
+    values:
+      title: Jongeun Park
+      layout: default
+collections:
+  albums:
+    output: true
