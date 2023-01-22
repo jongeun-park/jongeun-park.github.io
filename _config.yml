@@ -10,6 +10,4 @@ defaults:
     values:
       title: Jongeun Park
       layout: default
-collections:
-  albums:
-    output: true
+

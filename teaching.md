@@ -5,7 +5,7 @@ title: Jongeun Park-Teaching
 # Teaching
 
 - Independent Instructor
-> Food, Population, and the Environment (upper-level undergraduate) - Summer, Fall 2022
+> Food, Population, and the Environment (Upper-level undergraduate) - Summer, Fall 2022
 
 
 - Lab Instructor
