@@ -7,4 +7,4 @@ title: Jongeun Park-Research
 #### Work in Progress
 Is the Landfill Methane Outreach Program Effective in Reducing Methane Emissions? (<i>with Abdoul Sam</i>)
 <br>
-A Regulator in the Absence of a Legislator (<i>with Abdoul Sam</i>)
+Environmental Enforcement during Legislative Vacancies: Insights from Clean Air Act Inspections (<i>with Abdoul Sam</i>)
