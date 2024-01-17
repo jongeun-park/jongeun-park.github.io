@@ -9,7 +9,8 @@ title: Jongeun Park-Teaching
 
 
 - Lab Instructor
-> Applied Quantitative Methods II (Master) - Spring 2023
+> Introduction to Sustainability - Fall 2023 <br>
+Applied Quantitative Methods II (Master) - Spring 2023
 
 - Teaching Assistant
 > Economics of Public Policy Analysis - Spring 2022 <br>
