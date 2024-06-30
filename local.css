@@ -2,7 +2,9 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   font-family: "Fira Sans";
+  font-size: 20px; 
 }
+
 
 .navbar {
    bottom-margin: 20px;
@@ -26,7 +28,7 @@ body {
 }
 
 .mec-main {
-  max-width: 900px;
+  max-width: 1000px;
 }
 
 .mec-lectures {
@@ -59,4 +61,3 @@ body {
 .mec-abstract {
   text-align: justify;
 }
-
