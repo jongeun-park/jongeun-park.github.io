@@ -16,7 +16,49 @@
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
 	<!-- Custom styles for this template -->
-    <link href="local.css" rel="stylesheet">
+	<link href="local.css" rel="stylesheet">
+     <style>
+        #abstract {
+            display: none;
+            margin-top: 10px;
+        }
+        a.default-link {
+            cursor: pointer;
+            color: black;
+            text-decoration: underline;
+        }
+		.abstract-content {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+         function toggleAbstract(id) {
+            var abstract = document.getElementById("abstract-" + id);
+            var toggleLink = document.getElementById("toggleLink-" + id);
+
+            if (abstract.style.display === "none" || abstract.style.display === "") {
+                abstract.style.display = "block";
+                toggleLink.textContent = "[Hide Abstract]";
+            } else {
+                abstract.style.display = "none";
+                toggleLink.textContent = "[Abstract]";
+            }
+        }
+
+         function toggleDetail(id) {
+            var detail = document.getElementById("detail-" + id);
+            var toggleLink = document.getElementById("toggleLink-detail-" + id);
+
+            if (detail.style.display === "none" || detail.style.display === "") {
+                detail.style.display = "block";
+                toggleLink.textContent = "[Hide Details]";
+            } else {
+                detail.style.display = "none";
+                toggleLink.textContent = "[Details]";
+            }
+        }
+    </script>
   </head>
 
   <body role="document">
@@ -60,9 +102,11 @@
 		<br>Department of Agricultural, Environmental, and Development Economics
 		<br>The Ohio State University</p>
 		<br>
-		<p> Research Interest </p>
+		<p> Research Interests </p>
 		<ul>
-			<li> Environmental and public economics
+			<li> Environmental Economics
+			<li> Public Economics
+			<li> Applied Econometrics
 		</ul>
 		<p><a href="./pdf/cv_jongeun.pdf" style="font-size: 40px; color: #050C9C;" target="_blank">CV</a></p>
 		<p>
@@ -72,17 +116,29 @@
     </div>
     </header>
 
-    <!-- Working Paper -->
+    <!-- Job market paper -->
+    <a name="working"></a>
+	<div class="page-header">
+	<h3>Job Market Paper</h3>
+	</div>	
+	<b>"Environmental Enforcement during Legislative Vacancies: Insights from Clean Air Act Inspections''</b>, </font> <br>with <a href="https://aede.osu.edu/our-people/abdoul-sam" target="_blank">Abdoul G. Sam</a> </li>
+
+<a id="toggleLink-1" class="default-link" onclick="toggleAbstract(1)">[Abstract]</a>
+<div id="abstract-1" class="abstract-content">
+    <p  align="justify">Congressional members may seek to influence the enforcement of environmental regulations to enhance their re-election prospects. When congressional seats become vacant, primarily due to resignation or death, regulators may experience temporary independence from such political influences. We explore the effects of congressional vacancies on Clean Air Act inspections. We find vacancies of Democratic congressional members reduce inspection probability by 20.4\% and inspection frequency by 25\% compared to Democratic incumbency. This suggests regulators might increase inspections to align with Democratic members' preferences and revert to their preferred levels once these members leave Congress. We also find Republican vacancies lead to an increase in inspections for significant violators of Clean Air Act, compared to Republican incumbency, indicating incumbent Republicans may suppress inspections for these facilities. Our findings shed light on how political actors affect environmental enforcement and how regulators respond to legislative vacancies, offering insights for improving environmental regulatory effectiveness.</p>
+</div>
+
+	<!-- Working Paper -->
     <a name="working"></a>
 	<div class="page-header">
 	<h3>Working Papers</h3>
 	</div>	
-	<ul>
-	<li> Environmental Enforcement during Legislative Vacancies: Insights from Clean Air Act Inspections </font>	
-		<br>with <a href="https://aede.osu.edu/our-people/abdoul-sam" target="_blank">Abdoul G. Sam</a> </li>
-	<li> From Waste to Energy: Assessing the Efficacy of the Landfill Methane Outreach Program</font>	
-		<br>with <a href="https://aede.osu.edu/our-people/abdoul-sam" target="_blank">Abdoul G. Sam</a>
-	</ul>
+	"From Waste to Energy: Assessing the Efficacy of the Landfill Methane Outreach Program", </font>	
+		with <a href="https://aede.osu.edu/our-people/abdoul-sam" target="_blank">Abdoul G. Sam</a>
+<a id="toggleLink-2" class="default-link" onclick="toggleAbstract(2)">[Abstract]</a>
+<div id="abstract-2" class="abstract-content">
+    <p  align="justify"> We examine the efficacy of the Landfill Methane Outreach Program (LMOP) in mitigating methane emissions from municipal solid waste landfills in the United States. LMOP is a voluntary program initiated by the United States Environmental Protection Agency to incentivize landfill owners to undertake landfill gas-to-energy projects for the generation of new energy sources. Using a staggered difference-in-differences approach to account for the heterogeneity in the timing of LMOP participation, our empirical results show that the program increases the likelihood of landfill gas-to-energy project development by 25.2%. Despite this positive impact on landfill gas-to-energy project development, no significant reduction in fugitive methane emissions is observed, possibly due to the independent installation of landfill gas collection systems. However, landfill gas-to-energy project development is found to decrease net greenhouse gas emissions&#x2014;which account for avoided carbon emissions due to energy generation from captured methane gas&#x2014;by 26.1%. The findings underscore the important contribution of LMOP in promoting landfill gas-to-energy project development and reducing greenhouse gas emissions in the absence of legal mandates.</p>
+</div>
 
 	<!-- Work in Progress -->
 	<a name="progress"></a>
@@ -90,9 +146,9 @@
 	<h3>Work in Progress</h3>
 	</div>
 	<ul>
-	<li> Local Newspapers Closures and Firms' Environmental Behavior</font>	 </li>
-	<li> Political Power and Public Health: Examining the Effects of Caste Representation on Child Health in India</font>
-		<br>with <a href="https://www.karanshakya.com/home" target="_blank">Karan S. Shakya</a> and
+	<li> "Local Newspaper Closures and Firm Environmental Behavior"</font>	 </li>
+	<li> "Political Power and Public Health: Examining the Effects of Caste Representation on Child Health in India", </font>
+		with <a href="https://www.karanshakya.com/home" target="_blank">Karan S. Shakya</a> and
 	<a href="https://aede.osu.edu/our-people/ashish-adhikari" target="_blank">Ashish Adhikari</a>		</li>
 	</ul>
 	
@@ -103,21 +159,43 @@
 	</div>
 	<p>Lead Instructor</p>
 	<p><ul>
-	<li> Food, Population, and the Environment [Summer/Fall 2022, Summer 2023]</li>
+	<li>(Undergraduate) Food, Population, and the Environment
+	<a id="toggleLink-detail-4597" class="default-link" onclick="toggleDetail(4597)">[Details]</a>
+	<div id="detail-4597" class="abstract-content">
+		<p align="justify"> This course is a general education course for undergraduate students interested in exploring food security, population, and environmental challenges, with a particular focus on low-income countries. </p>
+		<p align="justify"> I enhanced the course content by updating roughly 30% of the curriculum, including the homework, quizzes, and exams. I taught the course over three semesters: Summer 2022 with 11 students, Fall 2022 with 60 students, and Summer 2023 with 12 students. </p>
+	</div>
+	</li>
+
 	</ul></p>
 
 	<p>Lab Instructor</p>
 	<p><ul>
-	<li> (Ph.D.) Applied Econometrics I, II [Spring 2024] </li>
-	<li>Introduction to Sustainability [Fall 2023] </li>
-	<li>(Master) Applied Quantitative Methods II [Spring 2023]</li>
+	<li>(Ph.D.) Applied Econometrics I, II 
+	<a id="toggleLink-detail-7130" class="default-link" onclick="toggleDetail(7130)">[Details]</a>
+	<div id="detail-7130" class="abstract-content">
+		<p align="justify"> These are required courses for first-year Ph.D. students and cover advanced applied econometrics. In Spring 2024, I led weekly lab sessions and taught R and Stata for applied econometrics to 9 Ph.D. students.</p>
+	</div>
+	</li>
+	<li>(Master's) Applied Quantitative Methods II
+			<a id="toggleLink-detail-6120" class="default-link" onclick="toggleDetail(6120)">[Details]</a>
+	<div id="detail-6120" class="abstract-content">
+		<p align="justify"> This is a required course for Master’s students and covers the application of mathematical programming and statistical methods. It also provides students with the opportunity to collaborate with the Risk Modeling and Analytics team at Huntington National Bank. Students are required to develop a default risk prediction model using econometrics and machine learning methods. In Spring 2023, I led weekly R programming sessions for 12 master’s students and assisted them with their projects at Huntington National Bank. </p>
+	</div>
+	</li>
+	<li>(Undergraduate) Introduction to Sustainability 
+	<a id="toggleLink-detail-2501" class="default-link" onclick="toggleDetail(2501)">[Details]</a>
+	<div id="detail-2501" class="abstract-content">
+		<p align="justify"> This is a general education course on social, economic, and environmental sustainability, co-taught by faculty members from different departments (Environment and Natural Resources / Agricultural, Environmental, and Development Economics). In Fall 2023, I led weekly discussion lab sessions for 116 undergraduate students, focusing on topics related to social, economic, and environmental sustainability. </p>
+	</div>
+	</li>	
 	</ul></p>
 
 	<p>Teaching Assistant</p>
 	<p><ul>
-	<li>Economics of Public Policy Analysis [Spring 2022] </li>
-	<li>International Commerce and the World Economy [Spring 2022] </li>
-	<li>Principles of Agribusiness Finance [Fall 2021] </li>
+	<li>(Undergraduate) Economics of Public Policy Analysis [Spring 2022] </li>
+	<li>(Undergraduate) International Commerce and the World Economy [Spring 2022] </li>
+	<li>(Undergraduate) Principles of Agribusiness Finance [Fall 2021] </li>
 	</ul></p>
 
 	

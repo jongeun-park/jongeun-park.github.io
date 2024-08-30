@@ -1,0 +1,4 @@
+User-Agent : *
+Disallow : /pdf/
+
+Sitemap: https:/jongeunpark.com/
