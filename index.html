@@ -6,6 +6,15 @@
 
     <title>Jongeun Park</title>
 
+	<!-- Navigation bar
+	<div class="topnav">
+	<a class="active" href="#home">Home</a>
+	<a href="#Research">Research</a>
+	<a href="#contact">Contact</a>
+	<a href="#about">About</a>
+	</div>  
+	-->
+	
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -41,37 +50,10 @@
                 text-align: justify !important;
             }
     </style>
-    <script>
-        function toggleAbstract(id) {
-            var abstract = document.getElementById("abstract-" + id);
-            var toggleLink = document.getElementById("toggleLink-" + id);
-
-            if (abstract.style.display === "none" || abstract.style.display === "") {
-                abstract.style.display = "block";
-                toggleLink.textContent = "[Hide Abstract]";
-            } else {
-                abstract.style.display = "none";
-                toggleLink.textContent = "[Abstract]";
-            }
-        }
-
-        function toggleDetail(id) {
-            var detail = document.getElementById("detail-" + id);
-            var toggleLink = document.getElementById("toggleLink-detail-" + id);
-
-            if (detail.style.display === "none" || detail.style.display === "") {
-                detail.style.display = "block";
-                toggleLink.textContent = "[Hide Details]";
-            } else {
-                detail.style.display = "none";
-                toggleLink.textContent = "[Show Details]";
-            }
-        }
-    </script>
   </head>
 
   <body role="document">
-
+	
     <div class="container mec-main">
   
     <!-- Header Section -->
@@ -86,79 +68,58 @@
                     <h1>Jongeun Park</h1>
                     <p>Ph.D. candidate<br>Agricultural, Environmental, and Development Economics at The Ohio State University</p>
                     <br>
-                    <p><b>I am on the 2024-25 job market.</b></p>
                     <p>Research Interests</p>
                     <ul>
-                        <li>Environmental Economics</li>
+                        <li>Environmental & Energy Economics</li>
                         <li>Public Economics</li>
-                        <li>Applied Econometrics</li>
                     </ul>
                     <p><a href="./pdf/CV-Jongeun.pdf" style="font-size: 40px; color: #050C9C;" target="_blank">CV</a></p>
                     <p>Contact: <a href="mailto:park.3070@osu.edu">park.3070@osu.edu</a></p>
                 </div>
             </div>
         </div>
+		
     </header>
-
-    <!-- Job Market Paper -->
-    <a name="job-market-paper"></a>
-    <div class="page-header">
-        <h3>Job Market Paper</h3>
-    </div>  
-        <b> <a href="./pdf/JMP-Jongeun.pdf" target="_blank">Environmental Enforcement during Legislative Vacancies: Insights from Clean Air Act Inspections</a></b>, <br>with <a href="https://aede.osu.edu/our-people/abdoul-sam" target="_blank">Abdoul G. Sam</a>
-    <br>
-	<div class="responsive-text">
-		<p style="margin:0px; padding:0px; line-height: 1.1;">
-        Members of Congress often seek to influence the enforcement of environmental regulations to satisfy voters and improve their chances of reelection. When these members resign or pass away, their positions remain vacant until the next election. These vacancies provide regulators with a temporary period of independence from congressional influence. We investigate the impact of congressional vacancies in the U.S. House of Representatives on Clean Air Act inspections between 2013 and 2022. We find that Democratic congressional vacancies lead to a 26.1% reduction in the probability of an inspection and a 28.6% decrease in the number of inspections compared to when Democratic members are in office. This finding suggests that regulators may increase inspections to align with the preferences of Democratic incumbents, then revert to previous levels once these members leave Congress. However, the effects of Democratic vacancies become insignificant when regulatory discretion is limited by additional guidelines and enforcement measures, such as Clean Air Act High Priority Violation and Non-attainment designations. We do not find significant evidence that Republican vacancies influence overall inspections. Our study sheds light on how regulatory actions are shaped by congressional influence and provides insights into improving the effectiveness of environmental regulation.
-		</p>
-	</div>
 
     <!-- Working Paper -->
     <a name="working-papers"></a>
     <div class="page-header">
-        <h3>Working Papers</h3>
+        <h2>Working Papers</h2>
     </div>
-    <b>From Waste to Energy: Assessing the Efficacy of the Landfill Methane Outreach Program</b>, <br>with <a href="https://aede.osu.edu/our-people/abdoul-sam" target="_blank">Abdoul G. Sam</a>
-    <br>
-	<div class="responsive-text">
-		<p style="margin:0px; padding:0px; line-height: 1.1;">
-        We examine the efficacy of the Landfill Methane Outreach Program (LMOP) in mitigating methane emissions from municipal solid waste landfills in the United States. LMOP is a voluntary program initiated by the United States Environmental Protection Agency to incentivize landfill owners to undertake landfill gas-to-energy projects for the generation of new energy sources. Using a staggered difference-in-differences approach to account for the heterogeneity in the timing of LMOP participation, our empirical results show that the program increases the likelihood of landfill gas-to-energy project development by 27.3%. Despite this positive impact on landfill gas-to-energy project development, no significant reduction in fugitive methane emissions is observed, possibly due to the independent installation of landfill gas collection systems. However, energy generation from captured landfill gas offsets fossil fuel-based energy. By promoting landfill gas recovery, LMOP helps avoid social costs of carbon, estimated between $81 million (5% discount rate) and $274 million (3% discount rate) during our study period. The results underscore the important contribution of LMOP in promoting landfill gas-to-energy project development and reducing greenhouse gas emissions in the absence of legal mandates.
-		</p>
-	</div>
-
+	<ul>
+		<li> Environmental Enforcement during Legislative Vacancies: Insights from Clean Air Act Inspections</a>, <br>with <a href="https://aede.osu.edu/our-people/abdoul-sam" target="_blank">Abdoul G. Sam</a>
+		</li>
+		<li> Local Newspapers and Corporate Environmental Decisions: Evidence from U.S. Power Plant Emissions</li>
+		<li> From Waste to Energy: Assessing the Efficacy of the Landfill Methane Outreach Program, <br>with <a href="https://aede.osu.edu/our-people/abdoul-sam" target="_blank">Abdoul G. Sam</a> (under review)
+		</li>
+	</ul>
+	
     <!-- Work in Progress -->
     <a name="work-in-progress"></a>
     <div class="page-header">
-        <h3>Work in Progress</h3>
+        <h2>Work in Progress</h2>
     </div>
     <ul>
-        <li>"Local Newspaper Closures and Firm Environmental Behavior"</li>
-        <li>"Political Power and Public Health: Examining the Effects of Caste Representation on Child Health in India", with <a href="https://www.karanshakya.com/home" target="_blank">Karan S. Shakya</a> and <a href="https://aede.osu.edu/our-people/ashish-adhikari" target="_blank">Ashish Adhikari</a></li>
+        
+        <li>Political Power and Public Health: Examining the Effects of Caste Representation on Child Health in India, with <a href="https://www.karanshakya.com/home" target="_blank">Karan S. Shakya</a> and <a href="https://aede.osu.edu/our-people/ashish-adhikari" target="_blank">Ashish Adhikari</a></li>
     </ul>
 
     <!-- Teaching -->
     <a name="teaching"></a>
     <div class="page-header">
-        <h3>Teaching</h3>
+        <h2>Teaching</h2>
     </div>
-    <p>Lead Instructor</p>
-    <ul>
-        <li>(Undergraduate) Food, Population, and the Environment [Summer/Fall 2022, Summer 2023]</li>
-    </ul>
+    <p> The Ohio State University </p>
+		<ul>
+		<li> Lead Instructor </li>
+			<ul style="list-style: none">
+			<li> Food, Population, and the Environment (x3)</li>
+			</ul>
+		<li> Lab Instructor </li>
+		<ul>
+			<li style="list-style: none">Applied Econometrics I, II (Ph.D.); Applied Quantitative Methods II (x2, Master); Introduction to Sustainability</li>
+    </ul></ul>
 
-    <p>Lab Instructor</p>
-    <ul>
-        <li>(Ph.D.) Applied Econometrics I, II [Spring 2024]</li>
-        <li>(Master's) Applied Quantitative Methods II [Spring 2023]</li>
-        <li>(Undergraduate) Introduction to Sustainability [Fall 2023]</li>
-    </ul>
-
-    <p>Teaching Assistant</p>
-    <ul>
-        <li>(Undergraduate) Economics of Public Policy Analysis [Spring 2022]</li>
-        <li>(Undergraduate) International Commerce and the World Economy [Spring 2022]</li>
-        <li>(Undergraduate) Principles of Agribusiness Finance [Fall 2021]</li>
-    </ul>
 
     <!-- Bootstrap core JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
